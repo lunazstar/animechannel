@@ -16,7 +16,7 @@ def scanromfs(folder):
                 pass
 
     if not urls:
-        print("no urls found, migh be binary")
+        print("no urls found, might be binary")
         for path in Path(folder).rglob('*'):
             if path.is_file():
                 data = path.read_bytes()
